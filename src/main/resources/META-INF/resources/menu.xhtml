@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en-us"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+    <title> Menu </title>
+</h:head>
+
+<h:body>
+    <h:form>
+        <p:menubar>
+
+            <p:submenu label="Usuario">
+                <p:menuitem value="Listagem" outcome="usuario-listagem.xhtml?faces-redirect=true" />
+                <p:menuitem value="Novo" outcome="usuario-novo.xhtml?faces-redirect=true" />
+            </p:submenu>
+
+            <p:submenu label="Cargo">
+                <p:menuitem value="Listagem" outcome="cargo-listagem.xhtml?faces-redirect=true" />
+                <p:menuitem value="Novo" outcome="cargo-novo.xhtml?faces-redirect=true" />
+            </p:submenu>
+
+            <p:submenu label="Funcionario">
+                <p:menuitem value="Listagem" outcome="funcionario-listagem.xhtml?faces-redirect=true" />
+                <p:menuitem value="Novo" outcome="funcionario-novo.xhtml?faces-redirect=true" />
+            </p:submenu>
+
+            <p:submenu label="Cargo do Funcionario">
+                <p:menuitem value="Listagem" outcome="cargoFuncionario-listagem.xhtml?faces-redirect=true" />
+                <p:menuitem value="Novo" outcome="cargoFuncionario-novo.xhtml?faces-redirect=true" />
+            </p:submenu>
+
+            <p:submenu label="Perfil">
+                <p:menuitem value="Listagem" outcome="perfil-listagem.xhtml?faces-redirect=true" />
+                <p:menuitem value="Novo" outcome="perfil-novo.xhtml?faces-redirect=true" />
+            </p:submenu>
+
+            <p:submenu label="Perfil do Usuario">
+                <p:menuitem value="Listagem" outcome="perfilUsuario-listagem.xhtml?faces-redirect=true" />
+                <p:menuitem value="Novo" outcome="perfilUsuario-novo.xhtml?faces-redirect=true" />
+            </p:submenu>
+
+            <p:submenu label="Hotel">
+                <p:menuitem value="Listagem" outcome="hotel-listagem.xhtml?faces-redirect=true" />
+                <p:menuitem value="Novo" outcome="hotel-novo.xhtml?faces-redirect=true" />
+            </p:submenu>
+
+        </p:menubar>
+    </h:form>
+</h:body>
+
+</html>
