@@ -36,11 +36,4 @@ public class CargoBean {
             Messages.addFlashGlobalError("Esse Cargo já existe!");
         }
     }
-
-    public void andar(){
-
-    }
-    public void comer(){
-
-    }
 }
