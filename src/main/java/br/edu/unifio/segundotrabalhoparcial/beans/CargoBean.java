@@ -15,6 +15,7 @@ import java.util.List;
 @Data @Component @ViewScoped
 public class CargoBean {
     private Cargo cargo;
+
     private List<Cargo> cargos;
 
     @Autowired
@@ -34,6 +35,12 @@ public class CargoBean {
             excecao.printStackTrace();
             Messages.addFlashGlobalError("Esse Cargo já existe!");
         }
+    }
+
+    public void andar(){
+
+    }
+    public void comer(){
 
     }
 }
