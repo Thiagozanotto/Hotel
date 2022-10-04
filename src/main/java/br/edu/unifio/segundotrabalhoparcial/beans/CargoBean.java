@@ -36,4 +36,5 @@ public class CargoBean {
             Messages.addFlashGlobalError("Esse Cargo já existe!");
         }
     }
+
 }
