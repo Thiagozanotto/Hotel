@@ -25,26 +25,26 @@
 
             <h:panelGrid columns="1">
                 <p:outputLabel value="Perfil"/>
-                <p:selectOneMenu value="#{perfilUsuarioBean.perfilUsurario.perfil}" converter="omnifaces.SelectItemsConverter"
+                <p:selectOneMenu value="#{perfilUsuarioBean.perfilUsuario.perfil}" converter="omnifaces.SelectItemsConverter"
                                  required="true" requiredMessage="O campo Perfil é obrigatório">
                     <f:selectItem noSelectionOption="true" itemLabel="Selecione um Perfil"/>
-                    <f:selectItems value="#{perfilUsuarioBean.perfils}" var="cursor" itemLabel="#{cursor.nome}"
-                                   itemValue="#{cursor}"/>
+                    <f:selectItems value="#{perfilUsuarioBean.perfils}" var="cursorper" itemLabel="#{cursorper.nome}"
+                                   itemValue="#{cursorper}"/>
                 </p:selectOneMenu>
             </h:panelGrid>
 
             <h:panelGrid columns="1">
             <p:outputLabel value="Usuario"/>
-            <p:selectOneMenu value="#{perfilUsuarioBean.perfilUsurario.usuario}" converter="omnifaces.SelectItemsConverter"
+            <p:selectOneMenu value="#{perfilUsuarioBean.perfilUsuario.usuario}" converter="omnifaces.SelectItemsConverter"
                              required="true" requiredMessage="O campo Usuario é obrigatório">
                 <f:selectItem noSelectionOption="true" itemLabel="Selecione um Usuario"/>
-                <f:selectItems value="#{perfilUsuarioBean.usuarios}" var="cursor" itemLabel="#{cursor.login}"
-                               itemValue="#{cursor}"/>
+                <f:selectItems value="#{perfilUsuarioBean.usuarios}" var="cursorusu" itemLabel="#{cursorusu.login}"
+                               itemValue="#{cursorusu}"/>
             </p:selectOneMenu>
             </h:panelGrid>
 
             <h:panelGrid columns="2">
-                <p:commandButton value="Salvar" actionListener="#{usuarioBean.salvar()}" update="mensagem" />
+                <p:commandButton value="Salvar" actionListener="#{perfilUsuarioBean.salvar()}" update="mensagem" />
                 <p:button value="Voltar" outcome="perfilUsuario-listagem.xhtml?faces-redirect=true"/>
             </h:panelGrid>
         </p:panel>

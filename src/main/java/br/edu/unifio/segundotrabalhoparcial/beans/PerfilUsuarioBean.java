@@ -1,7 +1,7 @@
 package br.edu.unifio.segundotrabalhoparcial.beans;
 
 import br.edu.unifio.segundotrabalhoparcial.entidades.Perfil;
-import br.edu.unifio.segundotrabalhoparcial.entidades.PerfilUsurario;
+import br.edu.unifio.segundotrabalhoparcial.entidades.PerfilUsuario;
 import br.edu.unifio.segundotrabalhoparcial.entidades.Usuario;
 import br.edu.unifio.segundotrabalhoparcial.repositorios.PerfilRepository;
 import br.edu.unifio.segundotrabalhoparcial.repositorios.PerfilUsuarioRepository;
@@ -21,8 +21,8 @@ import java.util.List;
 @ViewScoped
 public class PerfilUsuarioBean {
 
-    private PerfilUsurario perfilUsurario;
-    private List<PerfilUsurario> perfilUsurarios;
+    private PerfilUsuario perfilUsuario;
+    private List<PerfilUsuario> perfilUsuarios;
     private List<Usuario> usuarios;
     private List<Perfil> perfils;
     @Autowired
@@ -33,18 +33,18 @@ public class PerfilUsuarioBean {
     private PerfilUsuarioRepository perfilUsuarioRepository;
 
     public void listar() {
-        perfilUsurarios = perfilUsuarioRepository.findAll();
+        perfilUsuarios = perfilUsuarioRepository.findAll();
     }
 
     public void novo() {
-        perfilUsurario = new PerfilUsurario();
+        perfilUsuario = new PerfilUsuario();
         usuarios = usuarioRepository.findAll();
         perfils = perfilRepository.findAll();
     }
 
     public void salvar() {
         try {
-            perfilUsuarioRepository.save(perfilUsurario);
+            perfilUsuarioRepository.save(perfilUsuario);
             Messages.addFlashGlobalInfo("Registro salvo com sucesso!");
             Faces.navigate("perfilUsuario-listagem.xhtml?faces-redirect=true");
         } catch (DataIntegrityViolationException excecao){

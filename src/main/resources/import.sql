@@ -14,14 +14,14 @@ insert into cargo_funcionario (dt_admissao, dt_saida, cargo_codigo, funcionario_
 insert into cargo_funcionario (dt_admissao, dt_saida, cargo_codigo, funcionario_codigo) values ("2021-02-01", "2022-12-10", 2, 2);
 insert into cargo_funcionario (dt_admissao, dt_saida, cargo_codigo, funcionario_codigo) values ("2019-03-25", "2022-12-25", 3, 3);
 
-insert into perfil (nome) values ("Thiago");
-insert into perfil (nome) values ("Fabricio");
-insert into perfil (nome) values ("Sergio");
+insert into perfil (nome) values ("Admin");
+insert into perfil (nome) values ("UserAtendente");
+insert into perfil (nome) values ("UserGerente");
 
 insert into hotel (nome_fantasia,razao_social,cnpj) values ("HotelStrata","Strata","16.698.681/0001-43");
 insert into hotel (nome_fantasia,razao_social,cnpj) values ("HotelAdvanced","Advanced","98.616.681/0001-43");
 insert into hotel (nome_fantasia,razao_social,cnpj) values ("HotelSulamerica","Sulamerica","81.698.616/0001-43");
 
-insert into perfil_usuario (perfil_codgio,usuario_codigo) values (1,1);
-insert into perfil_usuario (perfil_codgio,usuario_codigo) values (2,2);
-insert into perfil_usuario (perfil_codgio,usuario_codigo) values (3,3);
+insert into perfil_usuario (perfil_codigo,usuario_codigo) values (1,1);
+insert into perfil_usuario (perfil_codigo,usuario_codigo) values (2,2);
+insert into perfil_usuario (perfil_codigo,usuario_codigo) values (3,3);

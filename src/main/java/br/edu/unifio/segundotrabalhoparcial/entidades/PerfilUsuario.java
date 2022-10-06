@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Data
-public class PerfilUsurario {
+public class PerfilUsuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer codigo;

@@ -25,7 +25,7 @@
 
             <h:panelGrid columns="1">
                 <p:outputLabel value="Perfil"/>
-                <p:selectOneMenu value="#{perfilUsuarioBean.perfilUsurario.perfil}" converter="omnifaces.SelectItemsConverter"
+                <p:selectOneMenu value="#{perfilUsuarioBean.perfilUsuario.perfil}" converter="omnifaces.SelectItemsConverter"
                                  required="true" requiredMessage="O campo Perfil é obrigatório">
                     <f:selectItem noSelectionOption="true" itemLabel="Selecione um Perfil"/>
                     <f:selectItems value="#{perfilUsuarioBean.perfils}" var="cursor" itemLabel="#{cursor.nome}"
@@ -35,7 +35,7 @@
 
             <h:panelGrid columns="1">
             <p:outputLabel value="Usuarios"/>
-            <p:selectOneMenu value="#{perfilUsuarioBean.perfilUsurario.usuario}" converter="omnifaces.SelectItemsConverter"
+            <p:selectOneMenu value="#{perfilUsuarioBean.perfilUsuario.usuario}" converter="omnifaces.SelectItemsConverter"
                              required="true" requiredMessage="O campo Usuario é obrigatório">
                 <f:selectItem noSelectionOption="true" itemLabel="Selecione um Usuario"/>
                 <f:selectItems value="#{perfilUsuarioBean.usuarios}" var="cursor" itemLabel="#{cursor.login}"
